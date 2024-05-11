@@ -28,7 +28,7 @@ public:
 
 	Camera(int width_, int height_, glm::vec3 pos_);
 	void sendMatrix(Shader& shader, const char* uniform);
-	void inputs(GLFWwindow* window);
+	void getInputs(GLFWwindow* window);
 };
 
 #endif // !CAMERA_H

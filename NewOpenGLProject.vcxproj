@@ -148,8 +148,12 @@
     <ClCompile Include="VBO.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="board.frag" />
     <None Include="default.frag" />
     <None Include="default.vert" />
+    <None Include="board.vert" />
+    <None Include="ligSource.frag" />
+    <None Include="ligSource.vert" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />

@@ -22,7 +22,7 @@ void Camera::sendMatrix(Shader& shader, const char* uniform)
 	glUniformMatrix4fv(glGetUniformLocation(shader.ID, uniform), 1, GL_FALSE, glm::value_ptr(proj * view));
 }
 
-void Camera::inputs(GLFWwindow* window)
+void Camera::getInputs(GLFWwindow* window)
 {
 	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
 		pos += speed * orient;

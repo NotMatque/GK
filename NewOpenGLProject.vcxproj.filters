@@ -25,6 +25,15 @@
     <Filter Include="Header Files\Buffers">
       <UniqueIdentifier>{df90f113-0712-44ef-a3bf-9afaa5d7dd13}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Shaders\default">
+      <UniqueIdentifier>{25703a93-3c13-499c-b269-202df3aeefa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders\lightSource">
+      <UniqueIdentifier>{ea9fcf6c-e99c-46b3-8364-29d8f9fb21e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders\floor">
+      <UniqueIdentifier>{f0030713-f328-4a3d-a3cf-c15486b886f7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -56,11 +65,23 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="default.frag">
-      <Filter>Resource Files\Shaders</Filter>
-    </None>
     <None Include="default.vert">
-      <Filter>Resource Files\Shaders</Filter>
+      <Filter>Resource Files\Shaders\default</Filter>
+    </None>
+    <None Include="default.frag">
+      <Filter>Resource Files\Shaders\default</Filter>
+    </None>
+    <None Include="ligSource.vert">
+      <Filter>Resource Files\Shaders\lightSource</Filter>
+    </None>
+    <None Include="ligSource.frag">
+      <Filter>Resource Files\Shaders\lightSource</Filter>
+    </None>
+    <None Include="board.vert">
+      <Filter>Resource Files\Shaders\floor</Filter>
+    </None>
+    <None Include="board.frag">
+      <Filter>Resource Files\Shaders\floor</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
