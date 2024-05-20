@@ -77,12 +77,6 @@
     <None Include="ligSource.frag">
       <Filter>Resource Files\Shaders\lightSource</Filter>
     </None>
-    <None Include="board.vert">
-      <Filter>Resource Files\Shaders\floor</Filter>
-    </None>
-    <None Include="board.frag">
-      <Filter>Resource Files\Shaders\floor</Filter>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shaderClass.h">

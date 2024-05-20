@@ -196,7 +196,7 @@ int main()
 
 
 // Setting textures:
-	Texture texDef("dietexture.png", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGBA, GL_UNSIGNED_BYTE);
+	Texture texDef("img/dietexture.png", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGBA, GL_UNSIGNED_BYTE);
 	texDef.texUnit(shaderDefault, "tex0", 0);
 
 // Creating Camera:
