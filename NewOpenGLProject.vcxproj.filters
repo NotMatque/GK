@@ -63,9 +63,6 @@
     <ClCompile Include="Camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="obj_loader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -122,9 +119,6 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="mesh_class.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="obj_loader.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

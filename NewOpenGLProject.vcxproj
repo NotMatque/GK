@@ -153,7 +153,6 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mesh_class.cpp" />
     <ClCompile Include="model.cpp" />
-    <ClCompile Include="obj_loader.cpp" />
     <ClCompile Include="shaderClass.cpp" />
     <ClCompile Include="shader_buffor_methods.cpp" />
     <ClCompile Include="stb.cpp" />
@@ -173,7 +172,6 @@
     <ClInclude Include="engine.h" />
     <ClInclude Include="mesh_class.h" />
     <ClInclude Include="model.h" />
-    <ClInclude Include="obj_loader.h" />
     <ClInclude Include="shaderClass.h" />
     <ClInclude Include="shader_buffor_methods.h" />
     <ClInclude Include="Texture.h" />
