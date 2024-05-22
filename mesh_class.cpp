@@ -1,6 +1,7 @@
-
-
 #include "mesh_class.h"
+
+#define TINYOBJLOADER_IMPLEMENTATION
+#include "tiny_obj_loader.h"
 
 Mesh::Mesh() {
 
@@ -81,9 +82,74 @@ Mesh::Mesh() {
 		4, 5, 6,
 		4, 6, 7
 	};
-
-
 }
+
+void Mesh::load_obj(std::string inputfile, std::vector<GLfloat>& verticies, std::vector<GLuint>& indicies) {
+
+	tinyobj::ObjReaderConfig reader_config;
+	reader_config.mtl_search_path = "./"; // Path to material files
+
+	tinyobj::ObjReader reader;
+
+	if (!reader.ParseFromFile(inputfile, reader_config)) {
+		if (!reader.Error().empty()) {
+			std::cerr << "TinyObjReader: " << reader.Error();
+		}
+		exit(1);
+	}
+
+	if (!reader.Warning().empty()) {
+		std::cout << "TinyObjReader: " << reader.Warning();
+	}
+
+	auto& attrib = reader.GetAttrib();
+	auto& shapes = reader.GetShapes();
+	auto& materials = reader.GetMaterials();
+
+	// Loop over shapes
+		// Loop over faces(polygon)
+		size_t index_offset = 0;
+		int temp = 0;
+		for (const auto& shape : shapes) {
+			// Loop over vertices in the face.
+			for (const auto& index : shape.mesh.indices) {
+				// access to vertex
+				tinyobj::index_t idx = shape.mesh.indices[index_offset];
+
+				//GLfloat temp_vert[] = {attrib.vertices[3 * index.vertex_index + 0], attrib.vertices[3 * index.vertex_index + 1], attrib.vertices[3 * index.vertex_index + 2] };
+
+				verticies.push_back(attrib.vertices[3 * index.vertex_index + 0]);
+				verticies.push_back(attrib.vertices[3 * index.vertex_index + 1]);
+				verticies.push_back(attrib.vertices[3 * index.vertex_index + 2]);
+
+				verticies.push_back(attrib.texcoords[2 * index.texcoord_index + 0]);
+				verticies.push_back(1.0f - attrib.texcoords[2 * index.texcoord_index + 1]);
+
+				// Optional: vertex colors
+				verticies.push_back(1.f);
+
+				verticies.push_back(1.f);
+
+				verticies.push_back(1.f);
+
+				indicies.push_back(temp);
+				temp++;
+				
+			}
+			index_offset += 3;
+
+			for (long i = 0; i < shape.mesh.indices.size(); i++) {
+				//indicies.push_back(shape.mesh.indices[i].vertex_index + 1);
+			}
+			
+		}
+}
+
+Mesh::Mesh(std::string obj_path) {
+	load_obj(obj_path, vertDefault, indiDefault);
+}
+
+
 
 std::vector<GLfloat> Mesh::get_vertDefault() { return vertDefault; }
 std::vector <GLuint> Mesh::get_indiDefault() { return indiDefault; }

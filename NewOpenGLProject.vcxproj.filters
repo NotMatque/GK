@@ -112,9 +112,6 @@
     <ClInclude Include="Camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="tiny_obj_loader.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="engine.h">
       <Filter>Source Files</Filter>
     </ClInclude>
@@ -125,6 +122,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="mesh_class.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="obj_loader.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -18,6 +18,8 @@
 #include"model.h"
 #include "mesh_class.h"
 
+
+
 int main() {
 
     GLFWwindow* window = engine_init();
@@ -28,7 +30,7 @@ int main() {
     }
 
     //Create mesh
-    Mesh test_mesh;
+    Mesh test_mesh("./obj_files/untitled.obj");
 
     // Creating shader and buffers
     Shader shaderDefault("default.vert", "default.frag");

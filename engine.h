@@ -1,5 +1,6 @@
 #ifndef ENGINE_H
 #define ENGINE_H
+
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <stb/stb_image.h>
@@ -9,6 +10,7 @@
 
 #include "Camera.h"
 #include "Texture.h"
+
 #include "mesh_class.h"
 
 #define WINDOW_WIDTH 800

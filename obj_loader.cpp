@@ -1,10 +1,8 @@
-#define TINYOBJLOADER_IMPLEMENTATION
+#include "obj_loader.h"
 
-#include <iostream>
-#include<vector>
-#include "tiny_obj_loader.h"
 
-void load_obj(std::string inputfile, std::vector<float> &verticies, std::vector<float>& indicies){
+
+/*void load_obj(std::string inputfile, std::vector<GLfloat>& verticies, std::vector<GLuint>& indicies) {
 	
     tinyobj::ObjReaderConfig reader_config;
     reader_config.mtl_search_path = "./"; // Path to material files
@@ -47,11 +45,11 @@ void load_obj(std::string inputfile, std::vector<float> &verticies, std::vector<
                 // Check if `normal_index` is zero or positive. negative = no normal data
 
                 //------------ puki co nie potrzebne (chyba, (mam nadzieje)) -----------/
-                /*if (idx.normal_index >= 0) {
-                    tinyobj::real_t nx = attrib.normals[3 * size_t(idx.normal_index) + 0];
-                    tinyobj::real_t ny = attrib.normals[3 * size_t(idx.normal_index) + 1];
-                    tinyobj::real_t nz = attrib.normals[3 * size_t(idx.normal_index) + 2];
-                }*/
+                //if (idx.normal_index >= 0) {
+                //    tinyobj::real_t nx = attrib.normals[3 * size_t(idx.normal_index) + 0];
+                //    tinyobj::real_t ny = attrib.normals[3 * size_t(idx.normal_index) + 1];
+                //   tinyobj::real_t nz = attrib.normals[3 * size_t(idx.normal_index) + 2];
+                //}
                 //-----------------------------------------------------------------------
                 
                 // Check if `texcoord_index` is zero or positive. negative = no texcoord data
@@ -78,4 +76,4 @@ void load_obj(std::string inputfile, std::vector<float> &verticies, std::vector<
         }
     }
 
-}
+}*/

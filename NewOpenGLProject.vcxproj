@@ -173,10 +173,10 @@
     <ClInclude Include="engine.h" />
     <ClInclude Include="mesh_class.h" />
     <ClInclude Include="model.h" />
+    <ClInclude Include="obj_loader.h" />
     <ClInclude Include="shaderClass.h" />
     <ClInclude Include="shader_buffor_methods.h" />
     <ClInclude Include="Texture.h" />
-    <ClInclude Include="tiny_obj_loader.h" />
     <ClInclude Include="VAO.h" />
     <ClInclude Include="VBO.h" />
   </ItemGroup>
