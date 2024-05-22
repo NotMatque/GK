@@ -8,6 +8,13 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+#include "shaderClass.h"
+#include "VAO.h"
+#include "VBO.h"
+#include "EBO.h"
+#include "Camera.h"
+#include "Texture.h"
+
 #include "Camera.h"
 #include "Texture.h"
 
@@ -21,11 +28,9 @@ class Engine{
 
 public:
 	Engine()=default;
-	
+	int engine_init();
+	void engine_loop(Camera cam,Texture& texDef, Mesh test_mesh, Shader shaderDefault, Shader shaderLig, VAO vaoDef);
+	void engine_terminate(Texture& texDef);
 };
-
-GLFWwindow* engine_init();
-void engine_loop(GLFWwindow* window, Camera temp, Texture& texDef, Mesh test_mesh, Shader shaderDefault, Shader shaderLig, VAO vaoDef);
-void engine_terminate(GLFWwindow* window, Texture& texDef);
 
 #endif

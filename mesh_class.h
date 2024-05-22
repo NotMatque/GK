@@ -18,8 +18,8 @@
 
 
 class Mesh {
-	std::vector<GLfloat> vertDefault;
-	std::vector<GLuint> indiDefault;
+	std::vector<GLfloat> vert;
+	std::vector<GLuint> indi;
 	std::vector<GLfloat> vertLigSource;
 	std::vector<GLuint> indiLigSource;
 

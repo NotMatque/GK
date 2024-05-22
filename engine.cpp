@@ -3,38 +3,42 @@
 #define WINDOW_WIDTH 800
 #define WINDOW_HEIGHT 800
 
-GLFWwindow* engine_init(){
+
+
+int Engine::engine_init(){
 	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-	GLFWwindow* window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "MGara OpenGL 3D Die with light", NULL, NULL);
+	window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "MGara OpenGL 3D Die with light", NULL, NULL);
 	glfwMakeContextCurrent(window);
+
+	if (window == NULL) { return -1; }
 
 	gladLoadGL();
 	glViewport(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
 
-	return window;
+	return 0;
 }
 
 
-void engine_loop(GLFWwindow* window, Camera &temp, Texture& texDef, Mesh test_mesh, Shader shaderDefault, Shader shaderLig, VAO vaoDef) {
+void Engine::engine_loop(Camera cam, Texture& texDef, Mesh test_mesh, Shader shaderDefault, Shader shaderLig, VAO vaoDef) {
 	while (!glfwWindowShouldClose(window))
 	{
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		temp.getInputs(window);
+		cam.getInputs(window);
 
 		shaderDefault.activate();
-		glUniform3f(glGetUniformLocation(shaderDefault.ID, "camPos"), temp.pos.x, temp.pos.y, temp.pos.z);
-		temp.sendMatrix(shaderDefault, "camMatrix");
+		glUniform3f(glGetUniformLocation(shaderDefault.ID, "camPos"), cam.pos.x, cam.pos.y, cam.pos.z);
+		cam.sendMatrix(shaderDefault, "camMatrix");
 		texDef.bind();
 		vaoDef.bind();
 		glDrawElements(GL_TRIANGLES, test_mesh.get_indiDefault().size(), GL_UNSIGNED_INT, 0);
 
 		shaderLig.activate();
-		temp.sendMatrix(shaderLig, "camMatrix");
+		cam.sendMatrix(shaderLig, "camMatrix");
 
 		glfwSwapBuffers(window);
 
@@ -42,7 +46,7 @@ void engine_loop(GLFWwindow* window, Camera &temp, Texture& texDef, Mesh test_me
 	}
 }
 
-void engine_terminate(GLFWwindow* window, Texture& texDef) {
+void Engine::engine_terminate(Texture& texDef) {
 	texDef.destroy();	
 	glfwDestroyWindow(window);
 	glfwTerminate();

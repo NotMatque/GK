@@ -22,9 +22,9 @@
 
 int main() {
 
-    GLFWwindow* window = engine_init();
+    Engine engine;
 
-    if (window == NULL) {
+    if (engine.engine_init() == -1) {
         std::cout << "ERROR! Failed to create a window!\n";
         return -1;
     }
@@ -61,31 +61,14 @@ int main() {
     texDef.texUnit(shaderDefault, "tex0", 0);
 
     // Creating Camera:
-    Camera debugCamera(WINDOW_WIDTH, WINDOW_HEIGHT, glm::vec3(0.0f, 0.5f, 2.0f));
+    Camera cam = Camera(WINDOW_WIDTH, WINDOW_HEIGHT, glm::vec3(0.0f, 0.5f, 2.0f));
     glClearColor(0.07f, 0.13f, 0.17f, 1.0f); int time = 0;
-    while (!glfwWindowShouldClose(window))
-    {
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
+    engine.engine_loop(cam, texDef, test_mesh, shaderDefault, shaderLig, vaoDef);
 
-        debugCamera.getInputs(window);
-
-        shaderDefault.activate();
-        glUniform3f(glGetUniformLocation(shaderDefault.ID, "camPos"), debugCamera.pos.x, debugCamera.pos.y, debugCamera.pos.z);
-        debugCamera.sendMatrix(shaderDefault, "camMatrix");
-        texDef.bind();
-        vaoDef.bind();
-        glDrawElements(GL_TRIANGLES, test_mesh.get_indiDefault().size(), GL_UNSIGNED_INT, 0);
-
-        shaderLig.activate();
-        debugCamera.sendMatrix(shaderLig, "camMatrix");
-
-        glfwSwapBuffers(window);
-
-        glfwPollEvents();
-    }
     // Closing procedure:
 
-    engine_terminate(window, texDef);
     shader_buffor_terminate(vaoDef, vboDef, eboDef, vaoLig, vboLig, eboLig, shaderDefault, shaderLig);
+    engine.engine_terminate(texDef);
     return 0;
 }
