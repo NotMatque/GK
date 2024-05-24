@@ -26,7 +26,6 @@ class Mesh {
 
 public:
 	Mesh();
-	void load_obj(std::string inputfile, std::vector<GLfloat>& verticies, std::vector<GLuint>& indicies);
 	Mesh(std::string obj_path);
 
 	std::vector <GLfloat> get_vertDefault();
