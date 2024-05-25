@@ -38,6 +38,32 @@ vec4 pointLight()
 	//return (texture(texPlanks, texCoord)) * lightColor;
 }
 
+vec4 spotLight()
+{
+	vec3 lightVector = lightPos - crntPos;
+	float outerCone = 0.9f;
+	float innerCone = 0.95f;
+
+	// Ambient
+	float ambient = 0.1f;
+
+	// Diffusion lighting
+	vec3 normal = normalize(Normal);
+	vec3 lightDirection = normalize(lightVector);
+	float diffuse = max(dot(normal, lightDirection), 0.0f);
+
+	float specularLight = 0.50f;
+	vec3 viewDirection = normalize(camPos - crntPos);
+	vec3 reflectionDirection = reflect(-lightDirection, normal);
+	float specAmount = pow(max(dot(viewDirection, reflectionDirection), 0.0f), 16);
+	float specular = specAmount * specularLight;
+
+	float angle = dot(normalize(vec3(-1.0f, -2.0f, -1.0f)), -lightDirection);
+	float inten = clamp((angle - outerCone) / (innerCone - outerCone), 0.0f, 1.0f);
+
+	return (texture(texPlanks, texCoord) * (diffuse * inten + ambient) + texture(texSpec, texCoord).r * specular * inten) * lightColor;
+}
+
 float near = 0.1f;
 float far = 100.0f;
 
@@ -56,5 +82,6 @@ void main()
 {
 	// Outputs final color
 	float depth = logisticDepth(gl_FragCoord.z);
-	FragColor = pointLight() * (1.0f - depth) + vec4(depth * vec3(0.13f, 0.27f, 0.41f), 1.0f);
+	//FragColor = spotLight() * (1.0f - depth) + vec4(depth * vec3(0.13f, 0.27f, 0.41f), 1.0f);
+	FragColor = spotLight() * (1.0f - depth) + vec4(depth * vec3(0.0f, 0.0f, 0.0f), 1.0f);
 }

@@ -15,10 +15,8 @@ uniform vec3 camPos;
 vec4 pointLight()
 {
 	vec3 lightVector = lightPos - crntPos;
-	float dist_ObjLig = length(lightVector);
-	float a = 0.1f;
-	float b = 0.02f;
-	float intensity = 1 / (a * dist_ObjLig * dist_ObjLig + b * dist_ObjLig + 1.0f);
+	float outerCone = 0.9f;
+	float innerCone = 0.95f;
 
 	// Ambient lighting
 	float ambient = 0.05f;
@@ -43,7 +41,10 @@ vec4 pointLight()
 		specular = specAmount * specularLight;
 	}
 
-	return (texture(texCube, texCoord) * (diffuse * intensity + ambient + specular * intensity)) * lightColor;
+	float angle = dot(normalize(vec3(-1.0f, -2.0f, -1.0f)), -lightDirection);
+	float inten = clamp((angle - outerCone) / (innerCone - outerCone), 0.0f, 1.0f);
+
+	return (texture(texCube, texCoord) * (diffuse * inten + ambient + specular * inten)) * lightColor;
 }
 
 

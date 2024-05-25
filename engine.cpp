@@ -75,7 +75,7 @@ bool Engine::buffor_init()
 
 bool Engine::camera_init()
 {
-	debug_cam = new Camera(WINDOW_WIDTH, WINDOW_HEIGHT, glm::vec3(0.0f, 0.5f, 2.0f));
+	debug_cam = new Camera(WINDOW_WIDTH, WINDOW_HEIGHT, glm::vec3(0.0f, 0.5f, 2.0f), glm::vec3(0.0f, 0.5f, 2.0f));
 	return debug_cam != NULL;
 }
 

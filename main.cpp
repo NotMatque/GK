@@ -92,7 +92,7 @@ int main() {
     glEnable(GL_DEPTH_TEST);
 
     glm::vec4 lightColor(1.0f, 1.0f, 1.0f, 1.0f);
-    glm::vec3 ligPos(1.0f, 2.0f, 0.0f);
+    glm::vec3 ligPos(1.0f, 2.0f, 1.0f);
     glm::mat4 ligModel(1.0f);
 
     ligModel = glm::translate(ligModel, ligPos);
@@ -174,8 +174,9 @@ int main() {
     texPlanksSpec.texUnit(shaderBoard, "texSpec", 2);
 
     // Creating Camera:
-    Camera cam = Camera(WINDOW_WIDTH, WINDOW_HEIGHT, glm::vec3(0.0f, 1.5f, 2.0f));
-    glClearColor(0.13f, 0.27f, 0.41f, 1.0f); int time = 0;
+    //Camera cam = Camera(WINDOW_WIDTH, WINDOW_HEIGHT, glm::vec3(1.0f, 2.0f, 2.0f), glm::vec3(-1.1f, -1.9f, -2.0f));
+    Camera cam = Camera(WINDOW_WIDTH, WINDOW_HEIGHT, glm::vec3(1.0f, 2.15f, 2.0f), glm::vec3(-1.1f, -2.0f, -2.0f));
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f); int time = 0;
     
 
     //Main while loop
