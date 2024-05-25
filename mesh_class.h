@@ -22,6 +22,8 @@ class Mesh {
 	std::vector<GLuint> indi;
 	std::vector<GLfloat> vertLigSource;
 	std::vector<GLuint> indiLigSource;
+	std::vector<GLfloat> vertBoard;
+	std::vector<GLuint> indiBoard;
 
 
 public:
@@ -33,6 +35,8 @@ public:
 	std::vector <GLuint> get_indiDefault();
 	std::vector <GLfloat> get_vertLigSource();
 	std::vector <GLuint> get_indiLigSource();
+	std::vector <GLfloat> get_vertBoard();
+	std::vector <GLuint> get_indiBoard();
 };
 
 #endif

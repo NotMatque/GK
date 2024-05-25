@@ -16,7 +16,7 @@ void main()
 {
 	texCoord = aTex;
 	crntPos = vec3(model * vec4(aPos, 1.0f));
-	Normal = aNorm;
+	Normal = vec3(transpose(inverse(model)) * vec4(aNorm, 1.0f));
 
-	gl_Position = camMatrix * model * vec4(aPos * scale, 1.0);
+	gl_Position = camMatrix * model * vec4(aPos * scale, 1.0f);
 }

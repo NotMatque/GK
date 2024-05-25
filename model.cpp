@@ -10,7 +10,7 @@ void model_manip(glm::vec4& lightColor, glm::vec3& ligPos, glm::mat4& ligModel, 
 	glm::mat4 defObjModel(1.0f);
 	defObjModel = glm::translate(defObjModel, defObjPos);
 	shaderDefault.activate();
-	glUniform1f(glGetUniformLocation(shaderDefault.ID, "scale"), 1.0f);
+	glUniform1f(glGetUniformLocation(shaderDefault.ID, "scale"), 0.2f);
 	glUniformMatrix4fv(glGetUniformLocation(shaderDefault.ID, "model"), 1, GL_FALSE, glm::value_ptr(defObjModel));
 	glUniform4f(glGetUniformLocation(shaderDefault.ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z, lightColor.w);
 	glUniform3f(glGetUniformLocation(shaderDefault.ID, "lightPos"), ligPos.x, ligPos.y, ligPos.z);

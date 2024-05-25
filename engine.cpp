@@ -1,29 +1,105 @@
 #include "engine.h"
 
-#define WINDOW_WIDTH 800
-#define WINDOW_HEIGHT 800
+//int Engine::engine_init()
+//{
+//	glfwInit();
+//	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+//	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+//	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+//
+//	window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Let the dice roll!", NULL, NULL);
+//	glfwMakeContextCurrent(window);
+//
+//	if (window == NULL) { return -1; }
+//
+//	gladLoadGL();
+//	glViewport(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
+//
+//	return 0;
+//}
 
+Engine::Engine()
+{
+	if (!init())
+		exit(-1);
+}
 
+bool Engine::init()
+{
+	bool status = true;
 
-int Engine::engine_init(){
+	status &= glfw_init();
+	status &= model_init();
+	status &= buffor_init();
+	status &= camera_init();
+	status &= tex_init();
+
+	return status;
+}
+
+bool Engine::glfw_init()
+{
 	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-	window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "MGara OpenGL 3D Die with light", NULL, NULL);
+	window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Let the dice roll!", NULL, NULL);
 	glfwMakeContextCurrent(window);
-
-	if (window == NULL) { return -1; }
 
 	gladLoadGL();
 	glViewport(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
 
-	return 0;
+	if (window == NULL)
+	{
+		std::cout << "ERROR! Failed to create a window!\n";
+		return false;
+	}
+
+	glEnable(GL_DEPTH_TEST);
+
+	return true;
 }
 
+bool Engine::model_init()
+{
+	//test_mesh = new Mesh("./obj_files/untitled.obj");
+	test_mesh = new Mesh;
 
-void Engine::engine_loop(Camera cam, Texture& texDef, Mesh test_mesh, Shader shaderDefault, Shader shaderLig, VAO vaoDef) {
+	return false;
+}
+
+bool Engine::buffor_init()
+{
+	cubeShader = new Shader("default.vert", "default.frag");
+	cubeVAO = new VAO; cubeVAO->bind();
+	cubeVBO = new VBO(test_mesh->get_vertDefault());
+	cubeEBO = new EBO(test_mesh->get_indiDefault());
+
+	cubeVAO->linkAttrib(*cubeVBO, 0, 3, GL_FLOAT, 8 * sizeof(GLfloat), (void*)0);
+	cubeVAO->linkAttrib(*cubeVBO, 1, 2, GL_FLOAT, 8 * sizeof(GLfloat), (void*)(3 * sizeof(GLfloat)));
+	cubeVAO->linkAttrib(*cubeVBO, 2, 3, GL_FLOAT, 8 * sizeof(GLfloat), (void*)(5 * sizeof(GLfloat)));
+	
+	cubeVAO->unbind();
+	cubeVBO->unbind();
+	cubeEBO->unbind();
+
+	return true;
+}
+
+bool Engine::camera_init()
+{
+	debug_cam = new Camera(WINDOW_WIDTH, WINDOW_HEIGHT, glm::vec3(0.0f, 0.5f, 2.0f));
+	return debug_cam != NULL;
+}
+
+bool Engine::tex_init()
+{
+	return false;
+}
+
+void Engine::engine_loop(Camera cam, Texture& texDef, Mesh test_mesh, Shader shaderDefault, Shader shaderLig, VAO vaoDef)
+{
 	while (!glfwWindowShouldClose(window))
 	{
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -46,7 +122,8 @@ void Engine::engine_loop(Camera cam, Texture& texDef, Mesh test_mesh, Shader sha
 	}
 }
 
-void Engine::engine_terminate(Texture& texDef) {
+void Engine::engine_terminate(Texture& texDef)
+{
 	texDef.destroy();	
 	glfwDestroyWindow(window);
 	glfwTerminate();

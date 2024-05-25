@@ -82,6 +82,17 @@ Mesh::Mesh() {
 		4, 5, 6,
 		4, 6, 7
 	};
+
+	vertBoard = {
+		-1.0f,  0.0f, 1.0f,		0.0, 0.0,		0.0, 1.0, 0.0,
+		1.0f, 0.0f, 1.0f,		1.0, 0.0,		0.0, 1.0, 0.0,
+		1.0f, 0.0f, -1.0f,		1.0, 1.0,		0.0, 1.0, 0.0,
+		-1.0f, 0.0f, -1.0f,		0.0, 1.0,		0.0, 1.0, 0.0,
+	};
+	indiBoard = {
+		0, 1, 2,
+		0, 2, 3,
+	};
 }
 
 Mesh::Mesh(std::string obj_path) {
@@ -144,3 +155,12 @@ std::vector<GLfloat> Mesh::get_vertDefault() { return vert; }
 std::vector <GLuint> Mesh::get_indiDefault() { return indi; }
 std::vector <GLfloat> Mesh::get_vertLigSource() { return vertLigSource; }
 std::vector <GLuint> Mesh::get_indiLigSource() { return indiLigSource; }
+
+std::vector<GLfloat> Mesh::get_vertBoard()
+{
+	return  vertBoard;
+}
+std::vector<GLuint> Mesh::get_indiBoard()
+{
+	return indiBoard;
+}

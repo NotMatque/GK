@@ -152,15 +152,15 @@
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mesh_class.cpp" />
-    <ClCompile Include="model.cpp" />
     <ClCompile Include="shaderClass.cpp" />
-    <ClCompile Include="shader_buffor_methods.cpp" />
     <ClCompile Include="stb.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="VAO.cpp" />
     <ClCompile Include="VBO.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="board.frag" />
+    <None Include="board.vert" />
     <None Include="default.frag" />
     <None Include="default.vert" />
     <None Include="ligSource.frag" />
@@ -171,17 +171,16 @@
     <ClInclude Include="EBO.h" />
     <ClInclude Include="engine.h" />
     <ClInclude Include="mesh_class.h" />
-    <ClInclude Include="model.h" />
     <ClInclude Include="shaderClass.h" />
-    <ClInclude Include="shader_buffor_methods.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="VAO.h" />
     <ClInclude Include="VBO.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="brick.png" />
-    <Image Include="dietexture.png" />
-    <Image Include="temp_lava.png" />
+    <Image Include="img\dieNormal.png" />
+    <Image Include="img\dietexture.png" />
+    <Image Include="img\planks.png" />
+    <Image Include="img\planksSpec.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
