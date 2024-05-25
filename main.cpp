@@ -30,7 +30,7 @@ int main() {
     }
 
     //Create mesh
-    Mesh test_mesh("./obj_files/untitled.obj");
+    Mesh test_mesh("./obj_files/klocekszescioscienny.obj");
 
     // Creating shader and buffers
     Shader shaderDefault("default.vert", "default.frag");
@@ -57,7 +57,7 @@ int main() {
     model_manip(lightColor, ligPos, ligModel, shaderDefault, shaderLig);
 
     // Setting textures:
-    Texture texDef("img/dietexture.png", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGBA, GL_UNSIGNED_BYTE);
+    Texture texDef("img/d6.png", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGBA, GL_UNSIGNED_BYTE);
     texDef.texUnit(shaderDefault, "tex0", 0);
 
     // Creating Camera:
