@@ -42,16 +42,12 @@ vec4 pointLight()
 		float specAmount = pow(max(dot(normal, halfwayVec), 0.0f), 16);
 		specular = specAmount * specularLight;
 	}
-	
-
 
 	return (texture(texCube, texCoord) * (diffuse * intensity + ambient + specular * intensity)) * lightColor;
 }
 
 
-
 void main()
 {
-	// Outputs final color
 	FragColor = pointLight();
 }

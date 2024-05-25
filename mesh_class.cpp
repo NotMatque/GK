@@ -56,43 +56,6 @@ Mesh::Mesh() {
 		20, 21, 22,
 		21, 22, 23
 	};
-
-	vertLigSource = {
-		-0.1f, -0.1f, 0.1f,		// 0	  7--------6
-		0.1f, -0.1f, 0.1f,		// 1	 /|       /|
-		0.1f, -0.1f, -0.1f,		// 2	4--------5 |
-		-0.1f, -0.1f, -0.1f,	// 3	| |      | |
-		-0.1f, 0.1f, 0.1f,		// 4	| 3------|-2
-		0.1f, 0.1f, 0.1f,		// 5	|/       |/
-		0.1f, 0.1f, -0.1f,		// 6	0--------1
-		-0.1f, 0.1f, -0.1f		// 7
-	};
-
-	indiLigSource = {
-		0, 1, 2,
-		0, 2, 3,
-		0, 4, 7,
-		0, 7, 3,
-		3, 7, 6,
-		3, 6, 2,
-		2, 6, 5,
-		2, 5, 1,
-		1, 5, 4,
-		1, 4, 0,
-		4, 5, 6,
-		4, 6, 7
-	};
-
-	vertBoard = {
-		-1.0f,  0.0f, 1.0f,		0.0, 0.0,		0.0, 1.0, 0.0,
-		1.0f, 0.0f, 1.0f,		1.0, 0.0,		0.0, 1.0, 0.0,
-		1.0f, 0.0f, -1.0f,		1.0, 1.0,		0.0, 1.0, 0.0,
-		-1.0f, 0.0f, -1.0f,		0.0, 1.0,		0.0, 1.0, 0.0,
-	};
-	indiBoard = {
-		0, 1, 2,
-		0, 2, 3,
-	};
 }
 
 Mesh::Mesh(std::string obj_path) {
@@ -136,11 +99,9 @@ Mesh::Mesh(std::string obj_path) {
 			vert.push_back(1.0f - attrib.texcoords[2 * index.texcoord_index + 1]);
 
 			// Optional: vertex colors
-			vert.push_back(attrib.colors[3 * size_t(idx.vertex_index) + 0]);
-
-			vert.push_back(attrib.colors[3 * size_t(idx.vertex_index) + 1]);
-
-			vert.push_back(attrib.colors[3 * size_t(idx.vertex_index) + 2]);
+			vert.push_back(attrib.normals[3 * size_t(idx.vertex_index) + 0]);
+			vert.push_back(attrib.normals[3 * size_t(idx.vertex_index) + 1]);
+			vert.push_back(attrib.normals[3 * size_t(idx.vertex_index) + 2]);
 
 			indi.push_back(temp);
 			temp++;

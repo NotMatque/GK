@@ -1,27 +1,13 @@
 #include "engine.h"
 
-//int Engine::engine_init()
-//{
-//	glfwInit();
-//	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-//	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-//	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-//
-//	window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Let the dice roll!", NULL, NULL);
-//	glfwMakeContextCurrent(window);
-//
-//	if (window == NULL) { return -1; }
-//
-//	gladLoadGL();
-//	glViewport(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
-//
-//	return 0;
-//}
-
 Engine::Engine()
 {
 	if (!init())
+	{
+		std::cout << "ERROR! Engine failed!\n";
 		exit(-1);
+	}
+		
 }
 
 bool Engine::init()

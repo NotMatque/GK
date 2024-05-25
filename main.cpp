@@ -16,8 +16,16 @@
 #include "engine.h"
 #include "mesh_class.h"
 
-GLFWwindow* startGL()
-{
+glm::vec3 setPosition1(float _t) { return glm::vec3(_t / 20 * sin(_t), _t / 20 * cos(_t), -0.25f);}
+glm::vec3 setPosition2(float _t) { return glm::vec3(0.25f, -_t / 20 * sin(_t), _t / 20 * cos(_t));}
+glm::vec3 setPosition3(float _t) { return glm::vec3(_t / 20 * sin(_t), 0.25f, _t / 20 * cos(_t));}
+glm::vec3 setPosition4(float _t) { return glm::vec3(_t / 20 * cos(_t), -0.25f, _t / 20 * sin(_t));}
+glm::vec3 setPosition5(float _t) { return glm::vec3(-0.25f, _t / 20 * sin(_t), _t / 20 * cos(_t));}
+glm::vec3 setPosition6(float _t) { return glm::vec3(_t / 20 * sin(_t), -_t / 20 * cos(_t), 0.25f);}
+
+int main() {
+    srand(time(NULL));
+
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
@@ -36,41 +44,8 @@ GLFWwindow* startGL()
         exit(-1);
     }
 
-    return window;
-}
-
-glm::vec3 setPosition1(float _t)
-{
-    return glm::vec3(_t / 20 * sin(_t), _t / 20 * cos(_t), -0.25f);
-}
-glm::vec3 setPosition2(float _t)
-{
-    return glm::vec3(0.25f, -_t / 20 * sin(_t), _t / 20 * cos(_t));
-}
-glm::vec3 setPosition3(float _t)
-{
-    return glm::vec3(_t / 20 * sin(_t), 0.25f, _t / 20 * cos(_t));
-}
-glm::vec3 setPosition4(float _t)
-{
-    return glm::vec3(_t / 20 * cos(_t), -0.25f, _t / 20 * sin(_t));
-}
-glm::vec3 setPosition5(float _t)
-{
-    return glm::vec3(-0.25f, _t / 20 * sin(_t), _t / 20 * cos(_t));
-}
-glm::vec3 setPosition6(float _t)
-{
-    return glm::vec3(_t / 20 * sin(_t), -_t / 20 * cos(_t), 0.25f);
-}
-
-int main() {
-    srand(time(NULL));
-
-    GLFWwindow* window = startGL();
-
-    //Create mesh
-    //Mesh test_mesh("./obj_files/untitled.obj");
+    //Create mesh - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    //Mesh test_mesh("./obj_files/klocekszescioscienny.obj");
     Mesh test_mesh;
 
     // Creating shader and buffers
@@ -117,7 +92,7 @@ int main() {
     glEnable(GL_DEPTH_TEST);
 
     glm::vec4 lightColor(1.0f, 1.0f, 1.0f, 1.0f);
-    glm::vec3 ligPos(1.0f, 2.0f, 1.0f);
+    glm::vec3 ligPos(1.0f, 2.0f, 0.0f);
     glm::mat4 ligModel(1.0f);
 
     ligModel = glm::translate(ligModel, ligPos);
@@ -193,20 +168,21 @@ int main() {
     // Setting textures:
     Texture texDef("img/dietexture.png", GL_TEXTURE_2D, 0, GL_RGBA, GL_UNSIGNED_BYTE);
     texDef.texUnit(shaderDefault, "texCube", 0);
-    Texture texDefNorm("img/dieNormal.png", GL_TEXTURE_2D, 1, GL_RGB, GL_UNSIGNED_BYTE);
-    texDefNorm.texUnit(shaderDefault, "texNormal", 1);
-    Texture texPlanks("img/planks.png", GL_TEXTURE_2D, 2, GL_RGBA, GL_UNSIGNED_BYTE);
-    texPlanks.texUnit(shaderBoard, "texPlanks", 2);
-    Texture texPlanksSpec("img/planksSpec.png", GL_TEXTURE_2D, 3, GL_RED, GL_UNSIGNED_BYTE);
-    texPlanksSpec.texUnit(shaderBoard, "texSpec", 3);
+    Texture texPlanks("img/planks.png", GL_TEXTURE_2D, 1, GL_RGBA, GL_UNSIGNED_BYTE);
+    texPlanks.texUnit(shaderBoard, "texPlanks", 1);
+    Texture texPlanksSpec("img/planksSpec.png", GL_TEXTURE_2D, 2, GL_RED, GL_UNSIGNED_BYTE);
+    texPlanksSpec.texUnit(shaderBoard, "texSpec", 2);
 
     // Creating Camera:
     Camera cam = Camera(WINDOW_WIDTH, WINDOW_HEIGHT, glm::vec3(0.0f, 1.5f, 2.0f));
-    glClearColor(0.07f, 0.13f, 0.17f, 1.0f); int time = 0;
+    glClearColor(0.13f, 0.27f, 0.41f, 1.0f); int time = 0;
     
-    //engine.engine_loop(cam, texDef, test_mesh, shaderDefault, shaderLig, vaoDef);
+
+    //Main while loop
+    unsigned int fpsCounter = 0;
     while (!glfwWindowShouldClose(window))
     {
+        fpsCounter++;
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         cam.getInputs(window);
@@ -222,7 +198,12 @@ int main() {
 
             defObjModel = glm::translate(defObjModel, defObjPos);
             defObjModel = glm::rotate(defObjModel, glm::radians(-200 * t), newUp);
-            
+
+            std::string FPS = std::to_string((1.0 / (crntTime - prevTime)) * fpsCounter);
+            std::string newTitle = "Let the dice roll! | " + FPS;
+            glfwSetWindowTitle(window, newTitle.c_str());
+            fpsCounter = 0;
+
             prevTime = crntTime;
         }
 
