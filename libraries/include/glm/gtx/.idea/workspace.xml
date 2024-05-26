@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f65b0ea6-a6e2-4a3e-a4b3-b8818f8ecd31" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.idea/GK.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/GK.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Camera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Camera.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Camera.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Camera.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../EBO.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../EBO.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../EBO.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../EBO.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../NewOpenGLProject.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../NewOpenGLProject.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../NewOpenGLProject.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../NewOpenGLProject.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../NewOpenGLProject.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../NewOpenGLProject.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Texture.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Texture.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Texture.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Texture.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../VAO.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../VAO.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../VAO.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../VAO.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../VBO.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../VBO.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../VBO.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../VBO.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../board.frag" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../board.frag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../board.vert" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../board.vert" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../default.frag" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../default.frag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../default.vert" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../default.vert" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../engine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../engine.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../engine.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../engine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../common.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/_features.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/_features.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/_fixes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/_fixes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/_noise.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/_noise.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/_swizzle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/_swizzle.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/_swizzle_func.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/_swizzle_func.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/_vectorize.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/_vectorize.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/compute_common.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/compute_common.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/compute_vector_relational.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/compute_vector_relational.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/func_common.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/func_common.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/func_common_simd.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/func_common_simd.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/func_exponential.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/func_exponential.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/func_exponential_simd.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/func_exponential_simd.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/func_geometric.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/func_geometric.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/func_geometric_simd.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/func_geometric_simd.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/func_integer.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/func_integer.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/func_integer_simd.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/func_integer_simd.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/func_matrix.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/func_matrix.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/func_matrix_simd.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/func_matrix_simd.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/func_packing.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/func_packing.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/func_packing_simd.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/func_packing_simd.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/func_trigonometric.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/func_trigonometric.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/func_vector_relational.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/func_vector_relational.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/func_vector_relational_simd.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/func_vector_relational_simd.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/glm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/glm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/qualifier.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/qualifier.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/setup.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/setup.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_float.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_float.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_half.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_half.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_half.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_half.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat2x2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat2x2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat2x2.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat2x2.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat2x3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat2x3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat2x3.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat2x3.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat2x4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat2x4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat2x4.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat2x4.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat3x2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat3x2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat3x2.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat3x2.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat3x3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat3x3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat3x3.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat3x3.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat3x4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat3x4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat3x4.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat3x4.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat4x2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat4x2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat4x2.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat4x2.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat4x3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat4x3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat4x3.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat4x3.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat4x4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat4x4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat4x4.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat4x4.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_mat4x4_simd.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_mat4x4_simd.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_quat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_quat.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_quat.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_quat.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_quat_simd.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_quat_simd.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_vec1.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_vec1.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_vec1.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_vec1.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_vec2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_vec2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_vec2.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_vec2.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_vec3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_vec3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_vec3.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_vec3.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_vec4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_vec4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_vec4.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_vec4.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detail/type_vec4_simd.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../detail/type_vec4_simd.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exponential.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../exponential.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_clip_space.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_clip_space.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_clip_space.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_clip_space.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_common.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_common.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_common.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_common.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double2x2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double2x2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double2x2_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double2x2_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double2x3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double2x3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double2x3_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double2x3_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double2x4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double2x4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double2x4_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double2x4_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double3x2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double3x2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double3x2_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double3x2_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double3x3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double3x3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double3x3_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double3x3_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double3x4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double3x4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double3x4_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double3x4_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double4x2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double4x2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double4x2_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double4x2_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double4x3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double4x3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double4x3_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double4x3_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double4x4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double4x4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_double4x4_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_double4x4_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float2x2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float2x2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float2x2_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float2x2_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float2x3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float2x3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float2x3_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float2x3_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float2x4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float2x4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float2x4_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float2x4_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float3x2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float3x2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float3x2_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float3x2_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float3x3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float3x3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float3x3_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float3x3_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float3x4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float3x4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float3x4_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float3x4_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float4x2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float4x2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float4x2_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float4x2_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float4x3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float4x3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float4x3_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float4x3_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float4x4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float4x4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_float4x4_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_float4x4_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_projection.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_projection.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_projection.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_projection.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_relational.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_relational.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_relational.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_relational.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_transform.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_transform.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/matrix_transform.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/matrix_transform.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/quaternion_common.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/quaternion_common.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/quaternion_common.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/quaternion_common.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/quaternion_common_simd.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/quaternion_common_simd.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/quaternion_double.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/quaternion_double.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/quaternion_double_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/quaternion_double_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/quaternion_exponential.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/quaternion_exponential.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/quaternion_exponential.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/quaternion_exponential.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/quaternion_float.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/quaternion_float.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/quaternion_float_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/quaternion_float_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/quaternion_geometric.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/quaternion_geometric.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/quaternion_geometric.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/quaternion_geometric.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/quaternion_relational.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/quaternion_relational.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/quaternion_relational.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/quaternion_relational.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/quaternion_transform.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/quaternion_transform.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/quaternion_transform.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/quaternion_transform.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/quaternion_trigonometric.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/quaternion_trigonometric.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/quaternion_trigonometric.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/quaternion_trigonometric.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/scalar_common.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/scalar_common.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/scalar_common.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/scalar_common.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/scalar_constants.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/scalar_constants.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/scalar_constants.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/scalar_constants.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/scalar_int_sized.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/scalar_int_sized.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/scalar_integer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/scalar_integer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/scalar_integer.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/scalar_integer.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/scalar_relational.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/scalar_relational.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/scalar_relational.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/scalar_relational.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/scalar_uint_sized.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/scalar_uint_sized.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/scalar_ulp.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/scalar_ulp.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/scalar_ulp.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/scalar_ulp.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_bool1.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_bool1.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_bool1_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_bool1_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_bool2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_bool2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_bool2_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_bool2_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_bool3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_bool3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_bool3_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_bool3_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_bool4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_bool4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_bool4_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_bool4_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_common.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_common.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_common.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_common.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_double1.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_double1.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_double1_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_double1_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_double2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_double2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_double2_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_double2_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_double3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_double3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_double3_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_double3_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_double4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_double4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_double4_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_double4_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_float1.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_float1.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_float1_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_float1_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_float2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_float2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_float2_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_float2_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_float3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_float3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_float3_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_float3_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_float4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_float4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_float4_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_float4_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_int1.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_int1.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_int1_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_int1_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_int2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_int2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_int2_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_int2_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_int3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_int3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_int3_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_int3_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_int4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_int4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_int4_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_int4_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_integer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_integer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_integer.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_integer.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_relational.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_relational.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_relational.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_relational.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_uint1.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_uint1.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_uint1_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_uint1_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_uint2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_uint2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_uint2_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_uint2_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_uint3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_uint3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_uint3_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_uint3_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_uint4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_uint4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_uint4_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_uint4_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_ulp.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_ulp.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ext/vector_ulp.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../ext/vector_ulp.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fwd.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../fwd.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../geometric.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../geometric.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../glm.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../glm.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/bitfield.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/bitfield.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/bitfield.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/bitfield.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/color_space.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/color_space.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/color_space.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/color_space.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/constants.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/constants.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/constants.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/constants.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/epsilon.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/epsilon.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/epsilon.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/epsilon.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/integer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/integer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/integer.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/integer.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/matrix_access.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/matrix_access.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/matrix_access.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/matrix_access.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/matrix_integer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/matrix_integer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/matrix_inverse.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/matrix_inverse.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/matrix_inverse.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/matrix_inverse.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/matrix_transform.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/matrix_transform.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/matrix_transform.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/matrix_transform.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/noise.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/noise.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/noise.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/noise.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/packing.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/packing.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/packing.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/packing.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/quaternion.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/quaternion.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/quaternion.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/quaternion.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/random.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/random.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/random.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/random.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/reciprocal.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/reciprocal.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/reciprocal.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/reciprocal.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/round.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/round.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/round.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/round.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/type_aligned.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/type_aligned.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/type_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/type_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/type_precision.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/type_precision.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/type_ptr.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/type_ptr.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/type_ptr.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/type_ptr.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/ulp.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/ulp.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/ulp.inl" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/ulp.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtc/vec1.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../gtc/vec1.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/associated_min_max.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/associated_min_max.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/associated_min_max.inl" beforeDir="false" afterPath="$PROJECT_DIR$/associated_min_max.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bit.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/bit.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bit.inl" beforeDir="false" afterPath="$PROJECT_DIR$/bit.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/closest_point.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/closest_point.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/closest_point.inl" beforeDir="false" afterPath="$PROJECT_DIR$/closest_point.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/color_encoding.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/color_encoding.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/color_encoding.inl" beforeDir="false" afterPath="$PROJECT_DIR$/color_encoding.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/color_space.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/color_space.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/color_space.inl" beforeDir="false" afterPath="$PROJECT_DIR$/color_space.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/color_space_YCoCg.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/color_space_YCoCg.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/color_space_YCoCg.inl" beforeDir="false" afterPath="$PROJECT_DIR$/color_space_YCoCg.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/common.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common.inl" beforeDir="false" afterPath="$PROJECT_DIR$/common.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compatibility.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/compatibility.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compatibility.inl" beforeDir="false" afterPath="$PROJECT_DIR$/compatibility.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component_wise.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/component_wise.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component_wise.inl" beforeDir="false" afterPath="$PROJECT_DIR$/component_wise.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dual_quaternion.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dual_quaternion.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dual_quaternion.inl" beforeDir="false" afterPath="$PROJECT_DIR$/dual_quaternion.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easing.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/easing.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easing.inl" beforeDir="false" afterPath="$PROJECT_DIR$/easing.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/euler_angles.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/euler_angles.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/euler_angles.inl" beforeDir="false" afterPath="$PROJECT_DIR$/euler_angles.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/extend.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend.inl" beforeDir="false" afterPath="$PROJECT_DIR$/extend.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extended_min_max.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/extended_min_max.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extended_min_max.inl" beforeDir="false" afterPath="$PROJECT_DIR$/extended_min_max.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exterior_product.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/exterior_product.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exterior_product.inl" beforeDir="false" afterPath="$PROJECT_DIR$/exterior_product.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast_exponential.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/fast_exponential.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast_exponential.inl" beforeDir="false" afterPath="$PROJECT_DIR$/fast_exponential.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast_square_root.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/fast_square_root.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast_square_root.inl" beforeDir="false" afterPath="$PROJECT_DIR$/fast_square_root.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast_trigonometry.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/fast_trigonometry.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast_trigonometry.inl" beforeDir="false" afterPath="$PROJECT_DIR$/fast_trigonometry.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/float_notmalize.inl" beforeDir="false" afterPath="$PROJECT_DIR$/float_notmalize.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/functions.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.inl" beforeDir="false" afterPath="$PROJECT_DIR$/functions.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradient_paint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/gradient_paint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradient_paint.inl" beforeDir="false" afterPath="$PROJECT_DIR$/gradient_paint.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handed_coordinate_space.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/handed_coordinate_space.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handed_coordinate_space.inl" beforeDir="false" afterPath="$PROJECT_DIR$/handed_coordinate_space.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/hash.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash.inl" beforeDir="false" afterPath="$PROJECT_DIR$/hash.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/integer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integer.inl" beforeDir="false" afterPath="$PROJECT_DIR$/integer.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intersect.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/intersect.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intersect.inl" beforeDir="false" afterPath="$PROJECT_DIR$/intersect.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/io.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io.inl" beforeDir="false" afterPath="$PROJECT_DIR$/io.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log_base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/log_base.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log_base.inl" beforeDir="false" afterPath="$PROJECT_DIR$/log_base.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_cross_product.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_cross_product.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_cross_product.inl" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_cross_product.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_decompose.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_decompose.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_decompose.inl" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_decompose.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_factorisation.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_factorisation.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_factorisation.inl" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_factorisation.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_interpolation.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_interpolation.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_interpolation.inl" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_interpolation.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_major_storage.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_major_storage.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_major_storage.inl" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_major_storage.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_operation.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_operation.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_operation.inl" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_operation.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_query.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_query.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_query.inl" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_query.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_transform_2d.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_transform_2d.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_transform_2d.inl" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_transform_2d.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mixed_product.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/mixed_product.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mixed_product.inl" beforeDir="false" afterPath="$PROJECT_DIR$/mixed_product.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/norm.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/norm.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/norm.inl" beforeDir="false" afterPath="$PROJECT_DIR$/norm.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/normal.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/normal.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/normal.inl" beforeDir="false" afterPath="$PROJECT_DIR$/normal.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/normalize_dot.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/normalize_dot.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/normalize_dot.inl" beforeDir="false" afterPath="$PROJECT_DIR$/normalize_dot.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/number_precision.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/number_precision.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/number_precision.inl" beforeDir="false" afterPath="$PROJECT_DIR$/number_precision.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optimum_pow.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/optimum_pow.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optimum_pow.inl" beforeDir="false" afterPath="$PROJECT_DIR$/optimum_pow.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orthonormalize.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/orthonormalize.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orthonormalize.inl" beforeDir="false" afterPath="$PROJECT_DIR$/orthonormalize.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perpendicular.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/perpendicular.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perpendicular.inl" beforeDir="false" afterPath="$PROJECT_DIR$/perpendicular.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polar_coordinates.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/polar_coordinates.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polar_coordinates.inl" beforeDir="false" afterPath="$PROJECT_DIR$/polar_coordinates.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projection.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/projection.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projection.inl" beforeDir="false" afterPath="$PROJECT_DIR$/projection.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quaternion.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/quaternion.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quaternion.inl" beforeDir="false" afterPath="$PROJECT_DIR$/quaternion.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/range.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/range.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raw_data.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/raw_data.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raw_data.inl" beforeDir="false" afterPath="$PROJECT_DIR$/raw_data.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rotate_normalized_axis.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/rotate_normalized_axis.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rotate_normalized_axis.inl" beforeDir="false" afterPath="$PROJECT_DIR$/rotate_normalized_axis.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rotate_vector.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/rotate_vector.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rotate_vector.inl" beforeDir="false" afterPath="$PROJECT_DIR$/rotate_vector.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scalar_multiplication.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/scalar_multiplication.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scalar_relational.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/scalar_relational.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scalar_relational.inl" beforeDir="false" afterPath="$PROJECT_DIR$/scalar_relational.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spline.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/spline.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spline.inl" beforeDir="false" afterPath="$PROJECT_DIR$/spline.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/std_based_type.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/std_based_type.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/std_based_type.inl" beforeDir="false" afterPath="$PROJECT_DIR$/std_based_type.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/string_cast.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/string_cast.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/string_cast.inl" beforeDir="false" afterPath="$PROJECT_DIR$/string_cast.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/texture.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/texture.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/texture.inl" beforeDir="false" afterPath="$PROJECT_DIR$/texture.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transform.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/transform.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transform.inl" beforeDir="false" afterPath="$PROJECT_DIR$/transform.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transform2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/transform2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transform2.inl" beforeDir="false" afterPath="$PROJECT_DIR$/transform2.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/type_aligned.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/type_aligned.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/type_aligned.inl" beforeDir="false" afterPath="$PROJECT_DIR$/type_aligned.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/type_trait.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/type_trait.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/type_trait.inl" beforeDir="false" afterPath="$PROJECT_DIR$/type_trait.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vec_swizzle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vec_swizzle.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vector_angle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vector_angle.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vector_angle.inl" beforeDir="false" afterPath="$PROJECT_DIR$/vector_angle.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vector_query.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/vector_query.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vector_query.inl" beforeDir="false" afterPath="$PROJECT_DIR$/vector_query.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrap.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/wrap.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrap.inl" beforeDir="false" afterPath="$PROJECT_DIR$/wrap.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../integer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../integer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mat2x2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../mat2x2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mat2x3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../mat2x3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mat2x4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../mat2x4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mat3x2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../mat3x2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mat3x3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../mat3x3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mat3x4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../mat3x4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mat4x2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../mat4x2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mat4x3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../mat4x3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mat4x4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../mat4x4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrix.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../matrix.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packing.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../packing.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simd/common.h" beforeDir="false" afterPath="$PROJECT_DIR$/../simd/common.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simd/exponential.h" beforeDir="false" afterPath="$PROJECT_DIR$/../simd/exponential.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simd/geometric.h" beforeDir="false" afterPath="$PROJECT_DIR$/../simd/geometric.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simd/integer.h" beforeDir="false" afterPath="$PROJECT_DIR$/../simd/integer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simd/matrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/../simd/matrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simd/neon.h" beforeDir="false" afterPath="$PROJECT_DIR$/../simd/neon.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simd/packing.h" beforeDir="false" afterPath="$PROJECT_DIR$/../simd/packing.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simd/platform.h" beforeDir="false" afterPath="$PROJECT_DIR$/../simd/platform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simd/trigonometric.h" beforeDir="false" afterPath="$PROJECT_DIR$/../simd/trigonometric.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simd/vector_relational.h" beforeDir="false" afterPath="$PROJECT_DIR$/../simd/vector_relational.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trigonometric.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../trigonometric.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vec2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../vec2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vec3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../vec3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vec4.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../vec4.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vector_relational.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../vector_relational.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tiny_obj_loader.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../tiny_obj_loader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ligSource.frag" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ligSource.frag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ligSource.vert" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ligSource.vert" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../mesh_class.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../mesh_class.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../mesh_class.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../mesh_class.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj_files/klocekszescioscienny.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj_files/klocekszescioscienny.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj_files/untitled.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj_files/untitled.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../shaderClass.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../shaderClass.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../shaderClass.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../shaderClass.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../stb.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../stb.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="3.4" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2h0zI6TulVPYutIegZdPAkh0cbN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "dev(temp)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f65b0ea6-a6e2-4a3e-a4b3-b8818f8ecd31" name="Changes" comment="" />
+      <created>1716745701468</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716745701468</updated>
+      <workItem from="1716745702492" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

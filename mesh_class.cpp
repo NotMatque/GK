@@ -89,7 +89,6 @@ Mesh::Mesh(std::string obj_path) {
 			// access to vertex
 			tinyobj::index_t idx = shape.mesh.indices[index_offset];
 
-			//GLfloat temp_vert[] = {attrib.vertices[3 * index.vertex_index + 0], attrib.vertices[3 * index.vertex_index + 1], attrib.vertices[3 * index.vertex_index + 2] };
 
 			vert.push_back(attrib.vertices[3 * index.vertex_index + 0]);
 			vert.push_back(attrib.vertices[3 * index.vertex_index + 1]);

@@ -84,7 +84,7 @@ bool Engine::shader_init()
 	cubeEBO->unbind();
 
 	// Preparing light source shader
-	this->ligSourceShader = new Shader("LigSource.vert", "LigSource.frag");
+	this->ligSourceShader = new Shader("ligSource.vert", "ligSource.frag");
 
 	this->ligSourceVAO = new VAO;
 	this->ligSourceVAO->bind();
@@ -309,7 +309,6 @@ void Engine::loop()
 		glUniformMatrix4fv(glGetUniformLocation(cubeShader->ID, "model"), 1, GL_FALSE, glm::value_ptr(defObjModel));
 		debug_cam->sendMatrix(*cubeShader, "camMatrix");
 		cubeTexture->bind();
-		
 		glDrawElements(GL_TRIANGLES, mesh->get_indiDefault().size(), GL_UNSIGNED_INT, 0);
 
 		ligSourceShader->activate();
@@ -319,7 +318,6 @@ void Engine::loop()
 
 		boardShader->activate();
 		boardVAO->bind();
-		glUniform3f(glGetUniformLocation(boardShader->ID, "camPos"), debug_cam->pos.x, debug_cam->pos.y, debug_cam->pos.z);
 		debug_cam->sendMatrix(*boardShader, "camMatrix");
 		boardTexture->bind();
 		boardSpecular->bind();
