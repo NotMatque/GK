@@ -1,29 +1,26 @@
 #include <iostream>
-#include <time.h>
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-#include <stb/stb_image.h>
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
 
-#include "shaderClass.h"
-#include "VAO.h"
-#include "VBO.h"
-#include "EBO.h"
-#include "Camera.h"
-#include "Texture.h"
 #include "engine.h"
-#include "mesh_class.h"
 
-glm::vec3 setPosition1(float _t) { return glm::vec3(_t / 20 * sin(_t), _t / 20 * cos(_t), -0.25f);}
-glm::vec3 setPosition2(float _t) { return glm::vec3(0.25f, -_t / 20 * sin(_t), _t / 20 * cos(_t));}
-glm::vec3 setPosition3(float _t) { return glm::vec3(_t / 20 * sin(_t), 0.25f, _t / 20 * cos(_t));}
-glm::vec3 setPosition4(float _t) { return glm::vec3(_t / 20 * cos(_t), -0.25f, _t / 20 * sin(_t));}
-glm::vec3 setPosition5(float _t) { return glm::vec3(-0.25f, _t / 20 * sin(_t), _t / 20 * cos(_t));}
-glm::vec3 setPosition6(float _t) { return glm::vec3(_t / 20 * sin(_t), -_t / 20 * cos(_t), 0.25f);}
+#define WINDOW_WIDTH 800
+#define WINDOW_HEIGHT 800
 
-int main() {
+glm::vec3 setPosition1(float _t) { return glm::vec3(_t / 20 * sin(_t), _t / 20 * cos(_t), -0.25f); }
+glm::vec3 setPosition2(float _t) { return glm::vec3(0.25f, -_t / 20 * sin(_t), _t / 20 * cos(_t)); }
+glm::vec3 setPosition3(float _t) { return glm::vec3(_t / 20 * sin(_t), 0.25f, _t / 20 * cos(_t)); }
+glm::vec3 setPosition4(float _t) { return glm::vec3(_t / 20 * cos(_t), -0.25f, _t / 20 * sin(_t)); }
+glm::vec3 setPosition5(float _t) { return glm::vec3(-0.25f, _t / 20 * sin(_t), _t / 20 * cos(_t)); }
+glm::vec3 setPosition6(float _t) { return glm::vec3(_t / 20 * sin(_t), -_t / 20 * cos(_t), 0.25f); }
+
+int engineV()
+{
+    Engine scene1;
+    scene1.loop();
+
+    return 0;
+}
+
+int pureV() {
     srand(time(NULL));
 
     glfwInit();
@@ -102,15 +99,14 @@ int main() {
 
     // Time passing logic:
     float t = 10; float speed = 0.08;
-    float r = t / 20;
     double prevTime = glfwGetTime();
 
     // Settign base model matrix
     glm::mat4 defBaseModel(1.0f);
-    glm::vec3 (* getVector)(float) = &setPosition3;
+    glm::vec3 (*getVector)(float) = &setPosition3;
     glm::vec3 newUp;
 
-    int randNum = (rand() % 6) + 1;
+    int randNum = 1;
 
     switch (randNum)
     {
@@ -198,7 +194,7 @@ int main() {
             defObjPos = getVector(t);
 
             defObjModel = glm::translate(defObjModel, defObjPos);
-            defObjModel = glm::rotate(defObjModel, glm::radians(-200 * t), newUp);
+            defObjModel = glm::rotate(defObjModel, glm::radians(-200 * t), up);
 
             std::string FPS = std::to_string((1.0 / (crntTime - prevTime)) * fpsCounter);
             std::string newTitle = "Let the dice roll! | " + FPS;
@@ -244,10 +240,23 @@ int main() {
     eboLig.destroy();
     shaderLig.destroy();
 
+    vboBoard.destroy();
+    vaoBoard.destroy();
+    eboBoard.destroy();
+    shaderBoard.destroy();
+
     texDef.destroy();
+    texPlanks.destroy();
+    texPlanksSpec.destroy();
+
     glfwDestroyWindow(window);
     glfwTerminate();
+    return 0;
+}
 
-    //engine.engine_terminate(texDef);
+int main()
+{
+    engineV();
+    pureV();
     return 0;
 }

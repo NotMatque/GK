@@ -12,7 +12,7 @@ uniform vec4 lightColor;
 uniform vec3 lightPos;
 uniform vec3 camPos;
 
-vec4 pointLight()
+vec4 spotLight()
 {
 	vec3 lightVector = lightPos - crntPos;
 	float outerCone = 0.9f;
@@ -50,5 +50,5 @@ vec4 pointLight()
 
 void main()
 {
-	FragColor = pointLight();
+	FragColor = spotLight();
 }

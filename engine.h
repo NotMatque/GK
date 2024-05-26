@@ -2,6 +2,7 @@
 #define ENGINE_H
 
 #include <vector>
+#include <time.h>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <stb/stb_image.h>
@@ -25,24 +26,31 @@ class Engine
 private:
 	// Key engine components
 	GLFWwindow *window;
-	Mesh* test_mesh;
-	Camera* debug_cam;
+	Mesh* mesh; 
+	Camera* debug_cam; //
 	double prev_time;
-	float t;
-	float max_speed;
+	double t;
+	double max_speed;
+	unsigned int randNum;
 
 	// Cube
 	Shader* cubeShader;
 	VAO* cubeVAO;
 	VBO* cubeVBO;
 	EBO* cubeEBO;
-	Texture* cubeTexture;
+	Texture* cubeTexture; //
+	glm::mat4 baseModel;
+	glm::vec3 (*getPos)(float);
+	glm::vec3 modelUp;
 
 	// Light
 	Shader* ligSourceShader;
 	VAO* ligSourceVAO;
 	VBO* ligSourceVBO;
 	EBO* ligSourceEBO;
+	glm::mat4* ligSourceModel;
+	glm::vec3* ligSourcePos;
+	glm::vec4* ligColor;
 
 	// Board
 	Shader* boardShader;
@@ -50,18 +58,18 @@ private:
 	VBO* boardVBO;
 	EBO* boardEBO;
 	Texture* boardTexture;
+	Texture* boardSpecular;
 
 public:
 	Engine();
-	bool init();
-	bool glfw_init();
-	bool buffor_init();
-	bool model_init();
+	bool openGL_init();
+	bool mesh_init();
+	bool shader_init();
+	unsigned int setBaseModels();
+	bool setTextures();
 	bool camera_init();
-	bool tex_init();
-
-	void engine_loop(Camera cam,Texture& texDef, Mesh test_mesh, Shader shaderDefault, Shader shaderLig, VAO vaoDef);
-	void engine_terminate(Texture& texDef);
+	void loop();
+	~Engine();
 };
 
 #endif
