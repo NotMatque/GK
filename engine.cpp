@@ -265,7 +265,6 @@ void Engine::getInputs(GLFWwindow* window)
 		this->t = 10;
 		this->randNum = (rand() % 6) + 1;
 		resetBaseModels();
-		
 	}
 }
 
@@ -285,7 +284,7 @@ void Engine::loop()
 
 		// Timer
 		double crntTime = glfwGetTime();
-		if ((crntTime - prev_time >= 1 / 60) and (t >= 0))
+		if ((crntTime - prev_time >= 1.0f / 60.0f) and (t >= 0.0f))
 		{
 			t -= max_speed * (-pow(((10 - t) / 10), 5) + 1);
 
@@ -318,6 +317,7 @@ void Engine::loop()
 
 		boardShader->activate();
 		boardVAO->bind();
+		glUniform3f(glGetUniformLocation(boardShader->ID, "camPos"), debug_cam->pos.x, debug_cam->pos.y, debug_cam->pos.z); // IT IS USEFULL WHEN U MOVE THE CAMERA!!!
 		debug_cam->sendMatrix(*boardShader, "camMatrix");
 		boardTexture->bind();
 		boardSpecular->bind();
