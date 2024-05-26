@@ -65,9 +65,10 @@ public:
 	bool openGL_init();
 	bool mesh_init();
 	bool shader_init();
-	unsigned int setBaseModels();
+	unsigned int resetBaseModels();
 	bool setTextures();
 	bool camera_init();
+	void getInputs(GLFWwindow* window);
 	void loop();
 	~Engine();
 };
