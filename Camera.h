@@ -16,7 +16,8 @@ class Camera
 {
 public:
 	glm::vec3 pos;
-	glm::vec3 orient = glm::vec3(0.0f, 0.0f, -1.0f);
+	//glm::vec3 orient = glm::vec3(0.0f, 0.0f, -1.0f);
+	glm::vec3 orient;
 	glm::vec3 up = glm::vec3(0.0, 1.0, 0.0);
 
 	int width, height;
@@ -26,7 +27,7 @@ public:
 
 	bool frstClick = true;
 
-	Camera(int width_, int height_, glm::vec3 pos_);
+	Camera(int width_, int height_, glm::vec3 pos_, glm::vec3 orient_);
 	void sendMatrix(Shader& shader, const char* uniform);
 	void getInputs(GLFWwindow* window);
 };

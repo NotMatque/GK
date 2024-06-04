@@ -31,8 +31,14 @@
     <Filter Include="Resource Files\Shaders\lightSource">
       <UniqueIdentifier>{ea9fcf6c-e99c-46b3-8364-29d8f9fb21e1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files\Shaders\floor">
-      <UniqueIdentifier>{f0030713-f328-4a3d-a3cf-c15486b886f7}</UniqueIdentifier>
+    <Filter Include="Resource Files\Shaders\board">
+      <UniqueIdentifier>{15af17a7-aecd-458e-b844-0ca46d9c9a0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Textures\Cube">
+      <UniqueIdentifier>{13a0aa02-3b08-422f-bf49-2ae28f766ecf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Textures\Board">
+      <UniqueIdentifier>{d3d1c129-7bfb-498d-96e7-0e8e7971b911}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -66,12 +72,6 @@
     <ClCompile Include="engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="shader_buffor_methods.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="model.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="mesh_class.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -88,6 +88,12 @@
     </None>
     <None Include="ligSource.frag">
       <Filter>Resource Files\Shaders\lightSource</Filter>
+    </None>
+    <None Include="board.vert">
+      <Filter>Resource Files\Shaders\board</Filter>
+    </None>
+    <None Include="board.frag">
+      <Filter>Resource Files\Shaders\board</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -109,28 +115,25 @@
     <ClInclude Include="Camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="engine.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="shader_buffor_methods.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="model.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="mesh_class.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="engine.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="temp_lava.png">
-      <Filter>Resource Files\Textures</Filter>
+    <Image Include="img\dieNormal.png">
+      <Filter>Resource Files\Textures\Cube</Filter>
     </Image>
-    <Image Include="brick.png">
-      <Filter>Resource Files\Textures</Filter>
+    <Image Include="img\planks.png">
+      <Filter>Resource Files\Textures\Board</Filter>
     </Image>
-    <Image Include="dietexture.png">
-      <Filter>Resource Files\Textures</Filter>
+    <Image Include="img\planksSpec.png">
+      <Filter>Resource Files\Textures\Board</Filter>
+    </Image>
+    <Image Include="img\dietexture.png">
+      <Filter>Resource Files\Textures\Cube</Filter>
     </Image>
   </ItemGroup>
 </Project>

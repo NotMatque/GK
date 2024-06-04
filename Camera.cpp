@@ -1,10 +1,11 @@
 #include "Camera.h"
 
-Camera::Camera(int width_, int height_, glm::vec3 pos_)
+Camera::Camera(int width_, int height_, glm::vec3 pos_, glm::vec3 orient_)
 {
 	this->width = width_;
 	this->height = height_;
 	this->pos = pos_;
+	this->orient = glm::normalize(orient_);
 }
 
 void Camera::sendMatrix(Shader& shader, const char* uniform)
